@@ -3,22 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HelloWorldComponent } from './components/hello-world/hello-world.component';
-import { UserItemComponent } from './components/user-item/user-item.component';
-import { UserListComponent } from './components/user-list/user-list.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HelloWorldComponent,
-    UserItemComponent,
-    UserListComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, ArticleComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
