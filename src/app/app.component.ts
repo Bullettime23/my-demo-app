@@ -17,7 +17,15 @@ export class AppComponent {
       new Article('Angular Homepage', 'http://angular.io', 1),
     ];
   }
+
   addArticle(title: HTMLInputElement, link: HTMLInputElement) {
-    console.log('Add ', title.value, ' and link ', link.value);
+    this.articles.push(new Article(title.value, link.value, 0));
+    title.value = '';
+    link.value = '';
+    return false;
+  }
+
+  sortedArticles(): Article[] {
+    return this.articles.sort((a, b) => b.votes - a.votes);
   }
 }
