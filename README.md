@@ -1,4 +1,5 @@
 Simple reddit clone
+Deployed at Vercel https://demo-reddit-clone-5qwods7r1-bullettime23.vercel.app/
 
 I build this simple appliction from Ng-book.
 
